@@ -46,8 +46,9 @@ li a {
     text-align: center;
     padding: 0px 20px;
     text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Libre Baskerville', serif;
 }
-#barn {
-    clear: both;
+
+#slider {
+    width: 100%;
 }
