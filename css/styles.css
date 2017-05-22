@@ -25,7 +25,7 @@ time, mark, audio, video {
 
 nav {
     width: 100%;
-    height: 50px;
+    height: 150px;
     background-color: white;
     margin: 0 auto;
     text-align: center;
@@ -38,7 +38,7 @@ nav ul {
 
 li {
     float: left;
-    line-height: 50px;
+    line-height: 150px;
 }
 
 li a {
@@ -48,7 +48,13 @@ li a {
     text-decoration: none;
     font-family: 'Libre Baskerville', serif;
 }
-
+a:hover {
+    color: #f1b1ae; 
+}
+#logo {
+    width: 150px;
+    padding:10px;
+}
 #slider {
     width: 100%;
 }
@@ -60,14 +66,7 @@ h1{
     font-size: 4em;
     color: #f1b1ae;
 }
-h2{
-    text-align: center;
-    margin: 0 auto;
-    margin-top: -35px;
-    margin-bottom: 10px;
-    font-family: 'Libre Baskerville', serif;
-    color: #545454;
-}
+
 p {
     font-family: 'Libre Baskerville', serif;
     font-size: .9em;
