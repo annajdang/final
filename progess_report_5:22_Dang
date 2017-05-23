@@ -1,0 +1,5053 @@
+Last login: Wed May 17 16:08:52 on console
+Annas-MacBook-Pro:~ dangitanna$ cd desktop
+Annas-MacBook-Pro:desktop dangitanna$ cd final-master
+Annas-MacBook-Pro:final-master dangitanna$ git status
+xcode-select: note: no developer tools were found at '/Applications/Xcode.app', requesting install. Choose an option in the dialog to download the command line developer tools.
+Annas-MacBook-Pro:final-master dangitanna$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+Annas-MacBook-Pro:final-master dangitanna$ git confit --global user.name ajdang
+git: 'confit' is not a git command. See 'git --help'.
+
+Did you mean this?
+	config
+Annas-MacBook-Pro:final-master dangitanna$ git config --global user.name annajdang
+Annas-MacBook-Pro:final-master dangitanna$ git config --global user.email ajdang@calpoly.edu
+Annas-MacBook-Pro:final-master dangitanna$ git init
+Initialized empty Git repository in /Users/dangitanna/Desktop/final-master/.git/
+Annas-MacBook-Pro:final-master dangitanna$ git clone https://github.com/annajdang/final.git
+Cloning into 'final'...
+remote: Counting objects: 23, done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 23 (delta 4), reused 23 (delta 4), pack-reused 0
+Unpacking objects: 100% (23/23), done.
+Annas-MacBook-Pro:final-master dangitanna$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	css/
+	final/
+	images/
+	index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+Annas-MacBook-Pro:final-master dangitanna$ cd ..
+Annas-MacBook-Pro:.Trash dangitanna$ cd ..
+Annas-MacBook-Pro:~ dangitanna$ cd desktop
+Annas-MacBook-Pro:desktop dangitanna$ clone https://github.com/annajdang/final.git
+-bash: clone: command not found
+Annas-MacBook-Pro:desktop dangitanna$ git clone https://github.com/annajdang/final.git
+Cloning into 'final'...
+remote: Counting objects: 23, done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 23 (delta 4), reused 23 (delta 4), pack-reused 0
+Unpacking objects: 100% (23/23), done.
+Annas-MacBook-Pro:desktop dangitanna$ git add -A
+fatal: Not a git repository (or any of the parent directories): .git
+Annas-MacBook-Pro:desktop dangitanna$ git add orgin https://github.com/annajdang/final.git
+fatal: Not a git repository (or any of the parent directories): .git
+Annas-MacBook-Pro:desktop dangitanna$ git init
+Initialized empty Git repository in /Users/dangitanna/Desktop/.git/
+Annas-MacBook-Pro:desktop dangitanna$ cd final
+Annas-MacBook-Pro:final dangitanna$ git add - A
+fatal: pathspec '-' did not match any files
+Annas-MacBook-Pro:final dangitanna$ git add -A
+Annas-MacBook-Pro:final dangitanna$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   css/styles.css
+	modified:   index.html
+
+Annas-MacBook-Pro:final dangitanna$ git commit -m "change navbar"
+[master 421691c] change navbar
+ 2 files changed, 8 insertions(+), 4 deletions(-)
+Annas-MacBook-Pro:final dangitanna$ git push
+fatal: unable to access 'https://github.com/annajdang/final.git/': SSL certificate problem: Invalid certificate chain
+Annas-MacBook-Pro:final dangitanna$ git remote add origin https://github.com/annajdang/final.git
+fatal: remote origin already exists.
+Annas-MacBook-Pro:final dangitanna$ git push -u origin master
+Username for 'https://github.com': annajdang
+Password for 'https://annajdang@github.com': 
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 591 bytes | 0 bytes/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/annajdang/final.git
+   e0626cb..421691c  master -> master
+Branch master set up to track remote branch master from origin.
+Annas-MacBook-Pro:final dangitanna$ git add -A
+Annas-MacBook-Pro:final dangitanna$ git commit -m "edit navbar"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+Annas-MacBook-Pro:final dangitanna$ git add -A
+Annas-MacBook-Pro:final dangitanna$ git commit -m "add images"
+[master 7398c0f] add images
+ 5 files changed, 12 insertions(+), 7 deletions(-)
+ create mode 100644 images/.DS_Store
+ delete mode 100644 images/front_barn.jpg
+ create mode 100644 images/slider1.jpg
+Annas-MacBook-Pro:final dangitanna$ git push
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 275.07 KiB | 0 bytes/s, done.
+Total 8 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/annajdang/final.git
+   421691c..7398c0f  master -> master
+Annas-MacBook-Pro:final dangitanna$ git add -A
+Annas-MacBook-Pro:final dangitanna$ git commit -m "add text"
+[master 866fdc7] add text
+ 2 files changed, 27 insertions(+), 1 deletion(-)
+Annas-MacBook-Pro:final dangitanna$ git push
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 703 bytes | 0 bytes/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/annajdang/final.git
+   7398c0f..866fdc7  master -> master
+Annas-MacBook-Pro:final dangitanna$ git add -A
+Annas-MacBook-Pro:final dangitanna$ git commmt -m "add logo"
+git: 'commmt' is not a git command. See 'git --help'.
+
+Did you mean this?
+	commit
+Annas-MacBook-Pro:final dangitanna$ git commit -m "add logo"
+[master aa53f4f] add logo
+ 4 files changed, 11 insertions(+), 13 deletions(-)
+ create mode 100644 images/logo.png
+Annas-MacBook-Pro:final dangitanna$ git push
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 21.30 KiB | 0 bytes/s, done.
+Total 8 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/annajdang/final.git
+   866fdc7..aa53f4f  master -> master
+Annas-MacBook-Pro:final dangitanna$ touch contact.html
+Annas-MacBook-Pro:final dangitanna$ git add -A
+Annas-MacBook-Pro:final dangitanna$ git commit -m "add contact"
+[master 0d01668] add contact
+ 2 files changed, 32 insertions(+), 1 deletion(-)
+ create mode 100644 contact.html
+Annas-MacBook-Pro:final dangitanna$ git push
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 698 bytes | 0 bytes/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/annajdang/final.git
+   aa53f4f..0d01668  master -> master
+Annas-MacBook-Pro:final dangitanna$ git add -A
+Annas-MacBook-Pro:final dangitanna$ git commit -m "add flowers"
+[master f4c9550] add flowers
+ 3 files changed, 23 insertions(+), 5 deletions(-)
+ create mode 100644 images/flowers.png
+Annas-MacBook-Pro:final dangitanna$ git push
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 75.48 KiB | 0 bytes/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/annajdang/final.git
+   0d01668..f4c9550  master -> master
+Annas-MacBook-Pro:final dangitanna$ git log
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+:...skipping...
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+:...skipping...
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+:...skipping...
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+:...skipping...
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+:...skipping...
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+:...skipping...
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+:...skipping...
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+:...skipping...
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+:...skipping...
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+:...skipping...
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+:...skipping...
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+:...skipping...
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+:...skipping...
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+:...skipping...
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+
+:...skipping...
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+
+commit ad7f22f13c133251dcc020d1e72bb0089468c679
+:...skipping...
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+
+commit ad7f22f13c133251dcc020d1e72bb0089468c679
+Author: annajdang <ajdang@calpoly.edu>
+:...skipping...
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+
+commit ad7f22f13c133251dcc020d1e72bb0089468c679
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:09:09 2017 -0700
+:...skipping...
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+
+commit ad7f22f13c133251dcc020d1e72bb0089468c679
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:09:09 2017 -0700
+
+:...skipping...
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+
+commit ad7f22f13c133251dcc020d1e72bb0089468c679
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:09:09 2017 -0700
+
+    add Eric Meyer CSS reset
+:...skipping...
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+
+commit ad7f22f13c133251dcc020d1e72bb0089468c679
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:09:09 2017 -0700
+
+    add Eric Meyer CSS reset
+
+:...skipping...
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+
+commit ad7f22f13c133251dcc020d1e72bb0089468c679
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:09:09 2017 -0700
+
+    add Eric Meyer CSS reset
+
+commit ff7e3a2b64e915c7646038f11f02fa3b5ca8c909
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+
+commit ad7f22f13c133251dcc020d1e72bb0089468c679
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:09:09 2017 -0700
+
+    add Eric Meyer CSS reset
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+
+commit ad7f22f13c133251dcc020d1e72bb0089468c679
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:09:09 2017 -0700
+
+    add Eric Meyer CSS reset
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+
+commit ad7f22f13c133251dcc020d1e72bb0089468c679
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:09:09 2017 -0700
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+
+commit ad7f22f13c133251dcc020d1e72bb0089468c679
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+
+commit ad7f22f13c133251dcc020d1e72bb0089468c679
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:09:09 2017 -0700
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+
+commit ad7f22f13c133251dcc020d1e72bb0089468c679
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:09:09 2017 -0700
+
+    add Eric Meyer CSS reset
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+
+commit ad7f22f13c133251dcc020d1e72bb0089468c679
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:09:09 2017 -0700
+
+    add Eric Meyer CSS reset
+
+commit ff7e3a2b64e915c7646038f11f02fa3b5ca8c909
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+
+commit ad7f22f13c133251dcc020d1e72bb0089468c679
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:09:09 2017 -0700
+
+    add Eric Meyer CSS reset
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+
+commit ad7f22f13c133251dcc020d1e72bb0089468c679
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:09:09 2017 -0700
+
+    add Eric Meyer CSS reset
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+
+commit ad7f22f13c133251dcc020d1e72bb0089468c679
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:09:09 2017 -0700
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+
+commit ad7f22f13c133251dcc020d1e72bb0089468c679
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:09:09 2017 -0700
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+
+commit ad7f22f13c133251dcc020d1e72bb0089468c679
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+    add image
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 15 11:20:23 2017 -0700
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+Author: annajdang <ajdang@calpoly.edu>
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+commit e0626cb21da6529f5f9b1e37a6113ec544923c47
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+    change navbar
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 09:15:27 2017 -0700
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+commit 421691cc4eb1b35dd1d0434ccaafb7496bd709b2
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+    add images
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit f4c95502974081d72f784f389469af9da48158a5
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:52:42 2017 -0700
+
+    add flowers
+
+commit 0d0166860b32e2159c060fc9c87f9c839b1311a4
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:34:20 2017 -0700
+
+    add contact
+
+commit aa53f4f44289928843f42c031c875f9351a505b0
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 11:10:59 2017 -0700
+
+    add logo
+
+commit 866fdc70e95beb79cc6c3a54c7e0511512fbc726
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:46:56 2017 -0700
+
+    add text
+
+commit 7398c0f581e0922cbffbb37c571431ab8b972b56
+Author: annajdang <ajdang@calpoly.edu>
+Date:   Mon May 22 10:30:24 2017 -0700
+
+[1]+  Stopped                 git log
+Annas-MacBook-Pro:final dangitanna$ 
