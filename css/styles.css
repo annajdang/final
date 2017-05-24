@@ -22,14 +22,14 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /*end CSS reset*/
-
+/*navbar*/
 nav {
     width: 100%;
     height: 150px;
     background-color: white;
     margin: 0 auto;
     text-align: center;
-    
+
 }
 nav ul {
     list-style-type: none;
@@ -55,9 +55,67 @@ a:hover {
     width: 150px;
     padding:10px;
 }
-#slider {
+/*end navbar*/
+/*Start home page*/
+
+/*CSS image slider from https://codepen.io/AMKohn/pen/EKJHf*/
+.slides {
+    padding: 0;
     width: 100%;
+    display: block;
+    position: relative;
 }
+.slides input{ 
+    display: none; 
+}
+.slide-container{ 
+    display: block; 
+}
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    display: block;
+    position: absolute;
+    transform: scale(0);
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 150pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: 'Libre Baskerville', serif;
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+.slide:hover + .nav label{ 
+    opacity: 0.5; 
+}
+.nav label:hover{ 
+    opacity: 1; 
+}
+.nav .next{ 
+    right: 0; 
+}
+input:checked + .slide-container  .slide{
+    opacity: 1;
+    transform: scale(1);
+}
+input:checked + .slide-container .nav label{ 
+    display: block; 
+}
+
+/*end CSS image slider from https://codepen.io/AMKohn/pen/EKJHf*/
 
 h1{
     text-align: center;
@@ -65,6 +123,7 @@ h1{
     font-family: 'Libre Baskerville', serif;
     font-size: 3em;
     color: #f1b1ae;
+   
 }
 h2{
     text-align: center;
@@ -73,16 +132,30 @@ h2{
     margin-bottom: 10px;
     font-family: 'Dancing Script', cursive;
     font-size: 2em;
+
 }
-p {
+#about {
     font-family: 'Libre Baskerville', serif;
     font-size: .9em;
     text-align: center;
     width: 70%;
     margin: 0 auto;
     line-height: 1.5em;
-}
 
+}
+/*end home page*/
+/*Start contact page*/
+iframe {
+    width: 500px;
+    height: 400px;
+    display: inline-block;
+    float: left;
+    margin: 20px;
+}
+#contact {
+    
+}
+/*end contact page*/
 footer {
     width: 100% auto;
     height: 50px;
@@ -90,7 +163,4 @@ footer {
 }
 #fb {
     width: 40px;
-    display: inline-block;
-    margin: 0 auto;
-    text-align: center;
 }
