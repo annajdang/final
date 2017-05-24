@@ -114,16 +114,16 @@ input:checked + .slide-container  .slide{
 input:checked + .slide-container .nav label{ 
     display: block; 
 }
-
 /*end CSS image slider from https://codepen.io/AMKohn/pen/EKJHf*/
 
 h1{
     text-align: center;
     margin: 0 auto;
+    margin-top: 35%;
     font-family: 'Libre Baskerville', serif;
     font-size: 3em;
-    color: #f1b1ae;
-   
+    color: #f1b1ae;  
+    position: relative;
 }
 h2{
     text-align: center;
@@ -132,7 +132,7 @@ h2{
     margin-bottom: 10px;
     font-family: 'Dancing Script', cursive;
     font-size: 2em;
-
+    position: relative;
 }
 #about {
     font-family: 'Libre Baskerville', serif;
@@ -141,9 +141,10 @@ h2{
     width: 70%;
     margin: 0 auto;
     line-height: 1.5em;
-
+    position: relative;
 }
 /*end home page*/
+
 /*Start contact page*/
 iframe {
     width: 500px;
@@ -159,8 +160,15 @@ iframe {
 footer {
     width: 100% auto;
     height: 50px;
-    margin-top: 20px;
+    position:relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-top: 10px;
+    background-color: aqua;
+    clear: both;
 }
+
 #fb {
     width: 40px;
 }
