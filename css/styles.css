@@ -154,7 +154,10 @@ iframe {
     margin: 20px;
 }
 #contact {
-    
+    margin-top: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    color: #f1b1ae; 
 }
 /*end contact page*/
 footer {
