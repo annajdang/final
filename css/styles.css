@@ -48,6 +48,9 @@ li a {
     text-decoration: none;
     font-family: 'Libre Baskerville', serif;
 }
+a:link{
+    text-decoration: none;
+}
 a:hover {
     color: #f1b1ae; 
 }
@@ -145,6 +148,44 @@ h2{
 }
 /*end home page*/
 
+/*start explore page*/
+#taft{
+    float: left;
+    width: 50%;
+    margin-bottom: 5px
+}
+#explore{
+    float:right;
+    width: 50%; 
+}
+#rustic{
+    margin-top: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    color: #f1b1ae; 
+}
+#elegance{
+    font-family: 'Libre Baskerville', serif;
+    font-size: .9em;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    line-height: 1.5em;
+    position: relative;
+}
+#flowers {
+    width:150px;
+    text-align: center;
+    margin: 0 auto;
+    margin: 10px;
+}
+#ex-img {
+    width: 100%;
+    margin-top: 3px;
+
+}
+/*end explore page*/
+
 /*Start contact page*/
 iframe {
     width: 500px;
@@ -167,9 +208,10 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: aqua;
     clear: both;
+    padding: 20px;
 }
 
 #fb {
