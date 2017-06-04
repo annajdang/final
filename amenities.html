@@ -21,20 +21,35 @@
                 <li><a href="index.html"><img src="images/logo.png" alt="logo" id="logo"></a></li>
                 <li><a href="weddings.html">Weddings</a>
                     <ul>
-                        <li><a href="#pricing.html">Pricing</a></li>
+                        <li ><a href="#pricing.html">Pricing</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-<!--CSS image slider from https://codepen.io/AMKohn/pen/EKJHf-->
-        <ul class="slides">
+<!--end Nav-->
+        <div id="amenities">
+            <h1 id="ranch">Ranch Amenitites</h1>
+                <ul>
+                    <li>40 acres nestled in rolling hills</li>
+                    <li>Rustic Barn with barrels and hay bails</li>
+                    <li>Walking trails through old oaks</li>
+                    <li>The Old Sycamore, perfect to say "I do" under</li>
+                    <li>String lights and chandelier</li>
+                    <li>Deer horns and rustic decorations</li>
+                    <li>Tables, chairs, wine barrels, and hay bails</li>
+                    <li>Easy, accessible parking</li>
+                </ul>
+        </div>
+    <!--CSS image slider from https://codepen.io/AMKohn/pen/EKJHf-->
+        
+        <ul class="slides2">
             <input type="radio" name="radio-btn" id="img-1" checked />
             <li class="slide-container">
 		      <div class="slide">
-			     <img src="images/slider1.jpg" />
+			     <img src="images/ranch1.jpg" />
               </div>
-		      <div class="nav">
+		      <div class="arrow">
 			     <label for="img-3" class="prev">&#x2039;</label>
 			     <label for="img-2" class="next">&#x203a;</label>
 		      </div>
@@ -42,9 +57,9 @@
             <input type="radio" name="radio-btn" id="img-2" />
             <li class="slide-container">
                 <div class="slide">
-                    <img src="images/slider2.jpg" />
+                    <img src="images/ranch2.jpg" />
                 </div>
-		      <div class="nav">
+		      <div class="arrow">
 			     <label for="img-1" class="prev">&#x2039;</label>
 			     <label for="img-3" class="next">&#x203a;</label>
 		      </div>
@@ -52,10 +67,20 @@
             <input type="radio" name="radio-btn" id="img-3" />
             <li class="slide-container">
                 <div class="slide">
-                    <img src="images/slider3.jpg" />
+                    <img src="images/ranch3.jpg" />
                 </div>
-		          <div class="nav">
+		          <div class="arrow">
 			         <label for="img-2" class="prev">&#x2039;</label>
+			         <label for="img-4" class="next">&#x203a;</label>
+		          </div>
+            </li>
+            <input type="radio" name="radio-btn" id="img-4" />
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="images/ranch4.jpg" />
+                </div>
+		          <div class="arrow">
+			         <label for="img-3" class="prev">&#x2039;</label>
 			         <label for="img-1" class="next">&#x203a;</label>
 		          </div>
             </li>
@@ -63,23 +88,12 @@
                 <label for="img-1" class="nav-dot" id="img-dot-1"></label>
                 <label for="img-2" class="nav-dot" id="img-dot-2"></label>
                 <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                <label for="img-4" class="nav-dot" id="img-dot-4"></label>
             </li>
         </ul>
-<!--images from:
-    http://www.beccarillo.com/taft-ranch-wedding-kelly-kevin/
-    http://www.skylawalton.com/blog/2015/5/30/heather-and-bret-taft-ranch-barn-wedding-in-atascadero
-    http://cloveandkin.com/blog/taft-ranch-wedding-nicole-ryan/
-    http://www.janellemarina.com/blog/beth-matts-taft-ranch-wedding-atascadero-ca
-    http://www.centralcoastweddingstandard.com/taft-ranch-wedding-by-michelle-mosqueda/-->
-<!-- end CSS image slider from https://codepen.io/AMKohn/pen/EKJHf-->
-
-<!--About-->
-        <h1>TAFT RANCH</h1>
-        <h2>Atascadero, California</h2>
-        
-        <p id="about">Taft Ranch is an amazing Barn and Ranch wedding venue located on the Central Coast. Nestled within the beautiful rolling hills of Atascadero, California, Taft Ranch has a great mix of wine country charm and big city elegance, this location is surely one of a kind. Get married beneath the gorgeous mature oak trees then dance the night away in the most spectacular vintage barn. Taft Ranch is the perfect location for your special day!</p>
-       
-        <img src="images/flowers.png" alt="flowers" id="flowers">
+        <img src="images/explore2.jpg" id="ex-img">
+        <p id="credit">Photography by Tayler Enerle, SLOtography, Skyla Walton, Clove&amp;Kin, and Becca Rillo</p>
+<!--footer-->
         <footer>
         </footer>
     </body>
