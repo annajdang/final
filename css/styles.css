@@ -206,7 +206,6 @@ h2{
     width: 100%;
     margin: auto;
     margin-top: 5px;
-    clear: both;
     position: relative;
 }
 #credit {
@@ -242,6 +241,9 @@ h2{
     width: 35%;
 }
 /*CSS image slider from https://codepen.io/AMKohn/pen/EKJHf*/
+.slides2 li {
+    list-style-type: none;
+}
 .slides2 {
     padding: 0;
     width: 60%;
@@ -249,6 +251,7 @@ h2{
     position:relative;
     float: right;
     margin: 10px;
+    margin-right: 25px;
 }
 .slides2 input{ 
     display: none; 
@@ -279,7 +282,7 @@ h2{
     color: #FFF;
     font-size: 100pt;
     text-align: center;
-    line-height: 225px;
+    line-height: 170%;
     font-family: 'Libre Baskerville', serif;
     text-shadow: 0px 0px 15px rgb(119, 119, 119);
 }
@@ -300,6 +303,14 @@ input:checked + .slide-container .arrow label{
     display: block; 
 }
 /*end CSS image slider from https://codepen.io/AMKohn/pen/EKJHf*/
+#amen-img {
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-top: 25%;
+    position: relative;
+
+}
 /*end amenities page*/
 
 /*start weddings page*/
