@@ -54,7 +54,8 @@ time, mark, audio, video {
 	position:absolute;
 	background:#fff;
     z-index: 9;
-    margin-top: -10%;
+    margin-top: -45%;
+    text-align: left;
 }
 #primary_nav_wrap ul ul li {
 	float:none;
@@ -63,7 +64,8 @@ time, mark, audio, video {
 #primary_nav_wrap ul ul a {
 	font-family: 'Libre Baskerville', serif;
     font-size: .7em;
-    line-height: 20%;
+    line-height: 40%;
+    padding-left: 5px 0px 5px 20px;
 }
 #primary_nav_wrap ul ul ul {
 	top:0;
@@ -71,6 +73,7 @@ time, mark, audio, video {
 }
 #primary_nav_wrap ul li:hover > ul {
 	display:block;
+    background: #faefee;
 }
 #logo {
     width: 150px;
@@ -195,9 +198,8 @@ h2{
 }
 #flowers {
     width:150px;
-    text-align: center;
+    display: block;
     margin: 0 auto;
-    margin: 10px;
 }
 #ex-img {
     display: block;
@@ -213,7 +215,27 @@ h2{
     margin-top: 5px;
 }
 /*end explore page*/
-
+/*start amenities page*/
+#ranch {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    color: #f1b1ae;
+    text-align: left;
+}
+#amenities ul {
+    list-style-type:disc;
+    margin-left: 50px;
+}
+#amenities ul li{
+	color:black;
+	text-decoration:none;
+	font-size: .8em;
+    line-height: 2em;
+	font-family: 'Libre Baskerville', serif;
+}
+/*end amenities page*/
 /*Start contact page*/
 iframe {
     width: 500px;
@@ -230,18 +252,5 @@ iframe {
 }
 /*end contact page*/
 footer {
-    width: 100% auto;
-    height: 50px;
-    position:relative;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin-top: 20px;
-    background-color: aqua;
-    clear: both;
-    padding: 20px;
-}
-
-#fb {
-    width: 40px;
+    height: 30px;
 }
