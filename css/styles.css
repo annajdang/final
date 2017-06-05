@@ -390,3 +390,12 @@ footer {
     background-color: #90b5e8;
     margin-top: 20px;
 }
+#foot-img {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+#footer {
+    width:35px;
+    margin: 5px;
+}
