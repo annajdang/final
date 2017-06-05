@@ -43,7 +43,7 @@ time, mark, audio, video {
 	font-family: 'Libre Baskerville', serif;
 }
 #primary_nav_wrap ul a:hover {
-    color:#f1b1ae; 
+    color:#90b5e8; 
 }
 #primary_nav_wrap ul li {
 	position:relative;
@@ -73,7 +73,7 @@ time, mark, audio, video {
 }
 #primary_nav_wrap ul li:hover > ul {
 	display:block;
-    background: #faefee;
+    background: #edf5ff;
 }
 #logo {
     width: 150px;
@@ -146,7 +146,7 @@ h1{
     margin-top: 35%;
     font-family: 'Libre Baskerville', serif;
     font-size: 3em;
-    color: #f1b1ae;  
+    color: #90b5e8;  
     position: relative;
 }
 h2{
@@ -170,21 +170,50 @@ h2{
 /*end home page*/
 
 /*start explore page*/
-#taft{
-    float: left;
-    width: 50%;
-    margin-bottom: 5px;
+/*parallax scrolling*/
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
 }
+.section {
+  position: relative;
+  height: 300px;
+  /* For text formatting. */
+  display: flex;
+  align-items: center;
+}
+.section1 {
+  position: relative;
+  height: 600px;
+  /* For text formatting. */
+  display: flex;
+  align-items: center;
+}
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+.static {
+  background: white;
+}
+/*end parallax scrolling*/
 #explore{
-    float:right;
-    width: 50%; 
+    width: 100%; 
 }
 #rustic{
-    margin-top: 20px;
+    margin:0px;
     font-family: 'Dancing Script', cursive;
     font-size: 3em;
-    color: #f1b1ae;
-    padding-right: 50px;
+    color: #90b5e8;
 }
 #elegance{
     font-family: 'Libre Baskerville', serif;
@@ -194,7 +223,7 @@ h2{
     margin: 0 auto;
     line-height: 1.5em;
     position: relative;
-    padding-right: 50px;
+    margin-top: 10px;
 }
 #flowers {
     width:150px;
@@ -205,8 +234,8 @@ h2{
     display: block;
     width: 100%;
     margin: auto;
-    margin-top: 5px;
     position: relative;
+    margin-top: 5px;
 }
 #credit {
     font-family: 'Libre Baskerville', serif;
@@ -214,6 +243,7 @@ h2{
     text-align: center;
     margin: 0 auto;
     margin-top: 5px;
+    margin-bottom: -15px;
 }
 /*end explore page*/
 /*start amenities page*/
@@ -221,7 +251,7 @@ h2{
     text-align: center;
     font-family: 'Dancing Script', cursive;
     font-size: 3em;
-    color: #f1b1ae;
+    color: #90b5e8;
     margin-top: 10px;
 }
 #amenities ul {
@@ -282,7 +312,7 @@ h2{
     color: #FFF;
     font-size: 100pt;
     text-align: center;
-    line-height: 170%;
+    line-height: 200pt;
     font-family: 'Libre Baskerville', serif;
     text-shadow: 0px 0px 15px rgb(119, 119, 119);
 }
@@ -319,7 +349,7 @@ input:checked + .slide-container .arrow label{
     margin-bottom: 5px;
     font-family: 'Dancing Script', cursive;
     font-size: 3em;
-    color: #f1b1ae; 
+    color: #90b5e8; 
 }
 #wedding{
     font-family: 'Libre Baskerville', serif;
@@ -352,9 +382,11 @@ input:checked + .slide-container .arrow label{
     margin-top: 20px;
     font-family: 'Dancing Script', cursive;
     font-size: 3em;
-    color: #f1b1ae; 
+    color: #90b5e8; 
 }
 /*end contact page*/
 footer {
-    height: 30px;
+    height: 50px;
+    background-color: #90b5e8;
+    margin-top: 20px;
 }
