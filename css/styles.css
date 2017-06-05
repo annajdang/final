@@ -177,16 +177,16 @@ h2{
   overflow-y: auto;
   perspective: 2px;
 }
-.section {
+.section1 {
   position: relative;
-  height: 300px;
+  height: 600px;
   /* For text formatting. */
   display: flex;
   align-items: center;
 }
-.section1 {
+.section2 {
   position: relative;
-  height: 600px;
+  height: 200px;
   /* For text formatting. */
   display: flex;
   align-items: center;
@@ -204,6 +204,11 @@ h2{
 }
 .static {
   background: white;
+    position: relative;
+  height: 200px;
+  /* For text formatting. */
+  display: flex;
+  align-items: center;
 }
 /*end parallax scrolling*/
 #explore{
@@ -371,12 +376,15 @@ input:checked + .slide-container .arrow label{
 /*end weddings page*/
 
 /*Start contact page*/
-#maps{
-    width: 500px;
-    height: 400px;
-    display: inline-block;
-    float: left;
-    margin: 20px;
+#address {
+    font-family: 'Libre Baskerville', serif;
+    font-size: .9em;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    line-height: 1.5em;
+    position: relative;
+    margin-bottom: 20px;
 }
 #contact {
     margin-top: 20px;
@@ -384,18 +392,27 @@ input:checked + .slide-container .arrow label{
     font-size: 3em;
     color: #90b5e8; 
 }
+#maps{
+    width: 80%;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
 /*end contact page*/
 footer {
-    height: 50px;
+    height: 60px;
     background-color: #90b5e8;
     margin-top: 20px;
+    bottom: 0px;
+    position:relative;
+    width: 100%;
 }
 #foot-img {
-    margin: 0 auto;
     display: block;
-    text-align: center;
+    text-align: right;
+    margin-right: 20px;
 }
 #footer {
-    width:35px;
-    margin: 5px;
+    width:40px;
+    margin: 10px 10px 0px 10px;
 }
