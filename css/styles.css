@@ -168,6 +168,8 @@ h2{
     position: relative;
 }
 /*end home page*/
+/*start explore page*/
+/*parallax scrolling via http://www.cssscript.com/pure-css-parallax-background-images*/
 section.module.parallax {
     height: 600px;
     background-position: 50% 50%;
@@ -177,13 +179,29 @@ section.module.parallax {
 }
 section.module.parallax-1 { background-image: url(../images/rustic.jpg); }
 section.module.parallax-2 { background-image: url(../images/rustic2.jpg); }
-
-/*start explore page*/
-/*parallax scrolling*/
-
 /*end parallax scrolling*/
-#explore{
-    width: 100%; 
+#explore {
+    font-size: 7em;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    margin: 0;
+}
+#scroll {
+    font-family: 'Libre Baskerville', serif;
+    font-size: .9em;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.5em;
+    position: relative;
+    margin-top: -20px;
+    padding-left:100px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#container{
+    padding: 40px;
 }
 #rustic{
     margin:0px;
@@ -223,12 +241,23 @@ section.module.parallax-2 { background-image: url(../images/rustic2.jpg); }
 }
 /*end explore page*/
 /*start amenities page*/
+/*parallax scrolling via http://www.cssscript.com/pure-css-parallax-background-images*/
+section.module.parallax {
+    height: 600px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+section.module.parallax-3 { background-image: url(../images/ranch1.jpg); }
+section.module.parallax-4 { background-image: url(../images/ranch2.jpg); }
+/*end parallax scrolling*/
 #ranch {
     text-align: center;
     font-family: 'Dancing Script', cursive;
     font-size: 3em;
     color: #90b5e8;
-    margin-top: 10px;
+    margin: 0px;
 }
 #amenities ul {
     list-style-type:disc;
@@ -242,16 +271,28 @@ section.module.parallax-2 { background-image: url(../images/rustic2.jpg); }
 	font-family: 'Libre Baskerville', serif;
 }
 #amenities {
-    float:left;
-    margin-bottom: 20px;
-    width: 35%;
+   padding: 40px;
 }
-#amen-img {
-    display: block;
-    width: 100%;
-    margin: auto;
+span {
+    color:#90b5e8;
+    font-weight: 700;
+}
+#amenities p {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+#down {
+    font-family: 'Libre Baskerville', serif;
+    font-size: .9em;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.5em;
     position: relative;
-
+    margin-top: -20px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 /*end amenities page*/
 
@@ -279,21 +320,47 @@ section.module.parallax-2 { background-image: url(../images/rustic2.jpg); }
     width:700px;
     height: 400px;
 }
-
 /*end weddings page*/
 
 /*Start contact page*/
-#contact-form{
-    
+h3{
+    margin: 20px 0px 10px 100px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    color: #90b5e8;  
 }
 #address {
+    float:left;
+    width: 50%;
+}
+#address p{
     font-family: 'Libre Baskerville', serif;
     font-size: .9em;
     width: 70%;
-    margin: 0 auto;
     line-height: 1.5em;
     position: relative;
-    margin-bottom: 20px;
+    margin: 0px 0px 5px 100px;
+}
+#address a {
+    font-family: 'Libre Baskerville', serif;
+    color: black;
+    text-decoration: none;
+}
+#address a:hover {
+    color:#90b5e8;
+}
+#contact-form {
+    float:left;
+    width: 45%;
+    margin: 0px 0px 20px 20px;
+}
+form p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1em;
+    width: 70%;
+    line-height: 1.5em;
+    position: relative;
+    margin-bottom: 5px;
 }
 #contact {
     margin-top: 20px;
@@ -301,27 +368,78 @@ section.module.parallax-2 { background-image: url(../images/rustic2.jpg); }
     font-size: 3em;
     color: #90b5e8; 
 }
+input {
+    width:100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+    font-family: 'Libre Baskerville', serif;
+}
+input::placeholder {
+    font-family: 'Libre Baskerville', serif;
+}
+input[type=text]:focus {
+    background-color: #edf5ff;
+    border: none;
+}
+input[type=email]:focus {
+    background-color: #edf5ff;
+    border: none;
+}
+textarea {
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    resize: none;
+    font-family: 'Libre Baskerville', serif;
+}
+textarea:focus{
+    background-color: #edf5ff;
+    border: none;
+    outline: none;
+}
+input[type=submit] {
+    font-family: 'Libre Baskerville', serif;
+    width: 100px;
+    background-color: #90b5e8;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 #maps{
     width: 80%;
-    height: 400px;
+    height: 350px;
     display: block;
     margin: 0 auto;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 /*end contact page*/
 footer {
-    height: 60px;
-    background-color: #90b5e8;
+    height: 40px;
+    background-color: #edf5ff;
     margin-top: 20px;
     bottom: 0px;
     position:relative;
     width: 100%;
+    clear: both;
 }
 #foot-img {
     display: block;
-    text-align: right;
+    text-align: center;
     margin-right: 20px;
 }
 #footer {
-    width:40px;
-    margin: 10px 10px 0px 10px;
+    width:30px;
+    margin: 5px 10px 0px 10px;
 }
